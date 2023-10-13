@@ -1,0 +1,101 @@
+Data Retrieval, Clean and Process, Transformation and Analysis, Iterate and Refine
+
+
+-- Avg age
+
+SELECT avg(Age) AS MaxAge
+FROM hr.hr_data;
+
+
+-- Types of Travel with values
+
+SELECT BusinessTravel, COUNT(*) AS TOTAL
+FROM hr.hr_data
+Group by BusinessTravel
+ORDER BY TOTAL ASC;
+
+
+-- Types of Dept. with values
+
+SELECT Department, COUNT(*) AS Total_Dept
+FROM hr.hr_data
+Group by Department
+order by Total_Dept ASC;
+
+
+-- AVG DistanceFromHome
+
+SELECT AVG(DistanceFromHome) AS AverageDistanceFromHome
+FROM hr.hr_data;
+
+
+-- Types of education field
+
+select distinct EducationField  AS type_of_education
+FROM hr.hr_data
+group by EducationField
+order by type_of_education asc;
+
+
+-- Total employee number
+
+select count(EmployeeNumber)
+FROM hr.hr_data;
+
+
+-- Counts of Jobrole
+
+select JobRole, count(*) as type_of_jobs_role
+FROM hr.hr_data
+group by JobRole
+order by type_of_jobs_role asc;
+
+-- Find a particular hourlyrate
+
+select count(*)
+FROM hr.hr_data
+where HourlyRate between 62 and 98;
+
+
+-- Type of marital status
+
+select MaritalStatus, count(*) as type_of_marital_status
+FROM hr.hr_data
+group by MaritalStatus
+order by type_of_marital_status asc;
+
+
+-- Find the number of Job Satisfaction
+
+select count(*)
+from hr.hr_data
+where JobSatisfaction >= 3;
+
+
+-- Find EmployeeNumber who has done overtime
+
+select EmployeeNumber
+from hr.hr_data
+where OverTime =1;
+
+-- Find EmployeeNumber who has PerformanceRating > 3
+
+select EmployeeNumber
+from hr.hr_data
+where PerformanceRating >3;
+
+
+
+--  Find EmployeeNumber who will retire between 2020 and 2036
+
+SELECT DISTINCT EmployeeNumber
+FROM hr.hr_data
+WHERE `Retirement Year` between 2020 and 2036
+order by EmployeeNumber asc;
+
+
+-- Joins
+
+select * from hr.hr_data as h
+inner join hr.`hr_data 02` as h2
+on h.EmployeeNumber= h2.EmployeeNumber;
