@@ -1,19 +1,20 @@
-# People & Workforce Analytics
-**Excel | MySQL | Power BI | Power Query | DAX**
+# People & Workforce Analytics Dashboard
+**Tools:** Excel, MySQL, Power BI, Power Query, DAX
 
 ## Project Overview
-Developed a data-driven workforce analytics solution to help HR teams improve recruitment, monitor employee performance, analyze attrition, and make informed workforce decisions.
+Developed an interactive workforce analytics dashboard to analyze employee demographics, departmental distribution, salary, job satisfaction, business travel, and attrition. The solution transforms workforce data into actionable insights to support HR reporting and data-driven workforce decisions.
 
 ## Key Contributions
 
-- **Workforce Data Preparation:** Applied ETL processes to clean, transform, and analyze workforce datasets covering employee attrition, salaries, and performance metrics.
-- **Recruitment & Retention Analytics:** Used regression techniques to analyze factors affecting new-hire integration, employee retention, and attrition.
-- **Interactive Power BI Dashboards:** Built reports using Power Query, DAX, and data visualization to track workforce KPIs and identify trends.
-- **Reporting Efficiency:** Streamlined HR reporting workflows, reducing report-generation time by 40% and enabling HR professionals to focus more on employee engagement and workforce planning.
+- **Workforce KPI Analysis:** Analyzed 1,470 employees across departments, examining workforce composition, average age, salary, job satisfaction, and attrition.
+- **Data Preparation & ETL:** Cleaned and transformed workforce data using Excel, MySQL, and Power Query to support consistent reporting and analysis.
+- **Interactive Power BI Dashboard:** Implemented KPI cards, gauges, bar charts, and donut charts to visualize workforce trends and departmental metrics.
+- **Attrition & Job Satisfaction Analysis:** Examined attrition by gender, job satisfaction across job roles, and workforce patterns to identify areas requiring further HR investigation.
+- **Automated Reporting:** Used Power Query and DAX to streamline reporting workflows, reducing report-generation time by 40%.
 
-## Business Impact
+## Business Value
 
-- **Recruitment & Retention:** Identified workforce trends and potential retention challenges to support more informed HR decisions.
-- **Performance & Productivity:** Enabled KPI-based analysis to identify opportunities for productivity improvements and better resource allocation.
-- **Operational Efficiency:** Improved workforce reporting through structured data preparation and interactive dashboards.
-- **Employee Experience:** Supported data-informed strategies for employee engagement and a positive work environment.
+- Improved visibility into workforce composition and departmental distribution.
+- Enabled HR teams to monitor salary, job satisfaction, and attrition indicators.
+- Supported data-driven recruitment, retention, and workforce planning decisions.
+- Reduced manual reporting effort, allowing greater focus on workforce analysis and employee engagement.
